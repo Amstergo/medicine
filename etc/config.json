@@ -1,0 +1,9 @@
+{
+  "apiPrefix": "http://127.0.0.1:8090",
+  "serverPort": "8090",
+  "db":{
+    "name": "note",
+    "host": "127.0.0.1",
+    "port": 27017
+  }
+}

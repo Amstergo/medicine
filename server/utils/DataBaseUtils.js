@@ -2,10 +2,12 @@ import mongoose from "mongoose";
 
 import  '../model/Note';
 
+import config from '../../etc/config.json';
+
 const Note = mongoose.model('Note');
 
 export function SetUpConnection() {
-  mongoose.connect('mongodb://localhost/notes');
+  mongoose.connect('mongodb://${config.db.host}:${config.db.port}/${config.db.name}');
 }
 
 export function listNotes() {
